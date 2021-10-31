@@ -5,19 +5,16 @@ public class Kastbana {
     System.out.println("Height: 0.615");
     new Kastbana(3.47542803119, 60);
     System.out.println(" ");
-    System.out.println("Height: 0.620 ");
-    new Kastbana(3.4895271886, 60);
+    System.out.println("Height: 0.630 ");
+    new Kastbana(3.5175559697, 60);
     System.out.println(" ");
-    System.out.println("Height: 0.610");
-    new Kastbana(3.46127144269, 60);
-
-
+    System.out.println("Height: 0.600");
+    new Kastbana(3.43278312743, 60);
   }
 
   public Kastbana(double V0, int Vinkel) {
     double VelocityY = V0 * (Math.sin(Math.toRadians(Vinkel)));
     double VelocityX = V0 * (Math.cos(Math.toRadians(Vinkel)));
-
 
     System.out.println("Question A");
     QuestionA(VelocityY, VelocityX);
@@ -59,9 +56,9 @@ public class Kastbana {
       double currentH = (VelocityY * time) - (9.82 * (time*time) / 2 );
       double currentD = VelocityX * time;
 
-      System.out.println("Time is " + time + " seconds");
-      System.out.println("Height is " + currentH);
-      System.out.println("Distance is " + currentD);
+      System.out.println("Time: " + time + " s");
+      System.out.println("Height: " + currentH);
+      System.out.println("Distance: " + currentD);
 
       time = time + dt;
     }
